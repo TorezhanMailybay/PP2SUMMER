@@ -1,0 +1,26 @@
+CREATE OR REPLACE FUNCTION search_contacts(pattern TEXT)
+RETURNS TABLE(id INT, username VARCHAR, phone VARCHAR)
+AS $$
+BEGIN
+    RETURN QUERY
+    SELECT p.id, p.username, p.phone
+    FROM phonebook p
+    WHERE p.username ILIKE '%' || pattern || '%'
+       OR p.phone ILIKE '%' || pattern || '%';
+END;
+$$
+LANGUAGE plpgsql;
+
+
+CREATE OR REPLACE FUNCTION get_contacts(limit_count INT, offset_count INT)
+RETURNS TABLE(id INT, username VARCHAR, phone VARCHAR)
+AS $$
+BEGIN
+    RETURN QUERY
+    SELECT p.id, p.username, p.phone
+    FROM phonebook p
+    LIMIT limit_count
+    OFFSET offset_count;
+END;
+$$
+LANGUAGE plpgsql;
