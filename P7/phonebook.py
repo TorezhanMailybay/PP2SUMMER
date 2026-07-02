@@ -41,12 +41,13 @@ def search_contact():
     conn = connect()
     cur = conn.cursor()
 
-    name = input("Enter name to search: ")
+    query = input("Enter name or phone prefix: ")
 
-    cur.execute(
-        "SELECT * FROM phonebook WHERE username = %s",
-        (name,)
-    )
+    cur.execute("""
+        SELECT * FROM phonebook
+        WHERE username LIKE %s
+           OR phone LIKE %s
+    """, (query + "%", query + "%"))
 
     rows = cur.fetchall()
 
