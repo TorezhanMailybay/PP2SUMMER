@@ -1,0 +1,42 @@
+[
+    {
+        "username": "Попс",
+        "email": "tsamsam77777@gmail.com",
+        "birthday": "1977-06-22",
+        "group": "Family",
+        "phone": "87477012505",
+        "type": "mobile"
+    },
+    {
+        "username": "Момс",
+        "email": "elmirasanbaeva831@gmail.com",
+        "birthday": "1983-04-22",
+        "group": "Family",
+        "phone": "87777430606",
+        "type": "mobile"
+    },
+    {
+        "username": "Батик",
+        "email": "batik@gmail.com",
+        "birthday": "2009-09-18",
+        "group": "Family",
+        "phone": "87768840100",
+        "type": "mobile"
+    },
+    {
+        "username": "Сула",
+        "email": "sultantastanbekov@gmail.com",
+        "birthday": "2005-09-22",
+        "group": "Friend",
+        "phone": "87077582541",
+        "type": "mobile"
+    },
+    {
+        "username": "Узб",
+        "email": "sunkartastanbekov@gmail.com",
+        "birthday": "2008-09-27",
+        "group": "Friend",
+        "phone": "87473036314",
+        "type": "mobile"
+    }
+]
