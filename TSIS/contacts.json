@@ -1,6 +1,14 @@
 [
     {
-        "username": "Попс",
+        "username": "\u041b\u0438\u0441\u043a\u0430",
+        "email": "lisuniya@gmail.com",
+        "birthday": "2009-10-24",
+        "group": "Family",
+        "phone": "87055569356",
+        "type": "mobile"
+    },
+    {
+        "username": "\u041f\u043e\u043f\u0441",
         "email": "tsamsam77777@gmail.com",
         "birthday": "1977-06-22",
         "group": "Family",
@@ -8,7 +16,7 @@
         "type": "mobile"
     },
     {
-        "username": "Момс",
+        "username": "\u041c\u043e\u043c\u0441",
         "email": "elmirasanbaeva831@gmail.com",
         "birthday": "1983-04-22",
         "group": "Family",
@@ -16,7 +24,7 @@
         "type": "mobile"
     },
     {
-        "username": "Батик",
+        "username": "\u0411\u0430\u0442\u0438\u043a",
         "email": "batik@gmail.com",
         "birthday": "2009-09-18",
         "group": "Family",
@@ -24,7 +32,7 @@
         "type": "mobile"
     },
     {
-        "username": "Сула",
+        "username": "\u0421\u0443\u043b\u0430",
         "email": "sultantastanbekov@gmail.com",
         "birthday": "2005-09-22",
         "group": "Friend",
@@ -32,11 +40,35 @@
         "type": "mobile"
     },
     {
-        "username": "Узб",
+        "username": "\u0423\u0437\u0431",
         "email": "sunkartastanbekov@gmail.com",
         "birthday": "2008-09-27",
         "group": "Friend",
         "phone": "87473036314",
         "type": "mobile"
+    },
+    {
+        "username": "\u0414\u0440\u0443\u043d",
+        "email": "DrunDrun@gmail.com",
+        "birthday": "2005-08-25",
+        "group": "Friend",
+        "phone": "87077077700",
+        "type": "mobile"
+    },
+    {
+        "username": "\u0421\u0435\u043c\u044c\u044f\u043d\u0438\u043d",
+        "email": "family@gmail.com",
+        "birthday": "2004-11-10",
+        "group": "Work",
+        "phone": "87000500000",
+        "type": "work"
+    },
+    {
+        "username": "\u0421\u0435\u043c\u044c\u044f\u043d\u0438\u043d\u0430",
+        "email": "Family2@gmail.com",
+        "birthday": "2005-05-15",
+        "group": "Family",
+        "phone": "87050000000",
+        "type": "home"
     }
 ]

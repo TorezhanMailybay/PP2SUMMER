@@ -309,6 +309,38 @@ def import_from_json():
     cur.close()
     conn.close()
 
+def import_from_csv():
+    conn = connect()
+    cur = conn.cursor()
+
+    filename = input("CSV file name: ")
+
+    try:
+        with open(filename, "r", newline="", encoding="utf-8") as file:
+            reader = csv.DictReader(file)
+
+            for row in reader:
+                cur.execute(
+                    "CALL add_contact(%s,%s,%s,%s,%s,%s)",
+                    (
+                        row["username"],
+                        row["email"],
+                        row["birthday"],
+                        row["group"],
+                        row["phone"],
+                        row["type"]
+                    )
+                )
+
+        conn.commit()
+        print("Import completed!")
+
+    except FileNotFoundError:
+        print("File not found.")
+
+    cur.close()
+    conn.close()
+
 
 while True:
 
@@ -321,9 +353,10 @@ while True:
     print("5. Sort contacts")
     print("6. Add second phone")
     print("7. Move to group")
-    print("8. Export to JSON")
-    print("9. Import from JSON")
-    print("10. Exit")
+    print("8. Import from CSV")
+    print("9. Export to JSON")
+    print("10. Import from JSON")
+    print("11. Exit")
 
     choice = input("Choose: ")
 
@@ -349,14 +382,18 @@ while True:
         move_to_group()
 
     elif choice == "8":
-        export_to_json()
+        import_from_csv()
 
     elif choice == "9":
-        import_from_json()
+        export_to_json()
 
     elif choice == "10":
+        import_from_json()
+
+    elif choice == "11":
         print("Goodbye!")
         break
 
     else:
         print("Invalid choice!")
+    
